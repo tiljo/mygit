@@ -1,0 +1,8 @@
+#include<stdio.h>
+#include<limits.h>
+main()
+{
+printf("max value of INT %d\n",INT_MAX);
+printf("min value of INT %d\n",INT_MIN);
+
+}
