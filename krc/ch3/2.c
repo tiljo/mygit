@@ -2,30 +2,31 @@
 char escape(char s[], char t[])
 {
 int i,j;
-i=j=0;
 
-	while((t[j++])!='\0'){
+
+	for(i=j=0; (t[j])!='\0';++j){
 		switch(t[j]){
 	
 		case '\t':
-			/*putchart*/t[j++]='\\';
-			/*putchar*/t[j]='t';
-	//		i++;
-		//	j++;
+			s[i]='\\';
+				
+			s[++i]='t';
+			
 			break;
 		case '\n':
-			/*putchar*/t[j++]='\\';
-			/*putchar*/t[j]='n';
-	//		i++;
-			//j++;
+			s[i]='\\';
+			
+			s[++i]='n';
+
 			break;
 		default:
-			s[i++]=t[j++];
+			s[i]=t[j];
 			break;
 		}
-	
+		++i;
 	}
-//	s[i]=t[j];
+	
+
 }
 main()
 {
