@@ -56,7 +56,10 @@ void month_day(int year,int yearday,int *pmonth,int *pday)
 main()
 {
 	int m=0,d=0;
-	month_day(2014, 33,&m,&d );
-	printf("%d	%d\n",m,d);
+	printf("day of year of 25/06/2014 is\n");
+	printf("%d\n",day_of_year(2014,6,25));
+	printf("month & day of 176th day of 2014 is\n");
+	month_day(2014, 176,&m,&d );
+	printf("%d	%d\n",d,m);
 	
 }
