@@ -79,4 +79,12 @@ main()
 	hash(as);
 	lookup(as);
 	undef(as);
+	char abc[]="YOU&ME=WE";
+	char ghi[]="kubuntu";
+	struct nlist* p=(install(abc,ghi));
+	printf("after calling install:   %s     is the result\n",p->name);
+	undef(abc);
+	printf("after calling undef:   %s    is the result\n",p->name);
+	
+	
 }
